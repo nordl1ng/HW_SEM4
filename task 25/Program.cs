@@ -6,9 +6,9 @@ System.Console.WriteLine("Введите число A");
 int a = int.Parse(Console.ReadLine()!);
 System.Console.WriteLine("Введите число B");
 int b = int.Parse(Console.ReadLine()!);
-double exp = 0;
-for (int i = 0; i < 1; i ++)
+int exp = 1;
+for (int i = 0; i < b; i ++)
 {
-    exp = Math.Pow(a,b);
+    exp = a*exp;
 }
-System.Console.WriteLine(exp);
+System.Console.WriteLine($"Число {a} в степени {b} равно {exp}");
